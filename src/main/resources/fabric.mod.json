@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "avatar_pack",
+	"version": "${version}",
+	"name": "avatar_pack",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/avatar_pack/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.notion.avatar_pack.Avatar_pack"
+		],
+		"client": [
+			"net.notion.avatar_pack.Avatar_packClient"
+		],
+		"fabric-datagen": [
+			"net.notion.avatar_pack.Avatar_packDataGenerator"
+		]
+	},
+	"mixins": [
+		"avatar_pack.mixins.json",
+		{
+			"config": "avatar_pack.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
