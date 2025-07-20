@@ -19,7 +19,7 @@
 			"net.notion.avatar_pack.Avatar_pack"
 		],
 		"client": [
-			"net.notion.avatar_pack.Avatar_packClient"
+			"net.notion.avatar_pack.client.Avatar_packClient"
 		],
 		"fabric-datagen": [
 			"net.notion.avatar_pack.Avatar_packDataGenerator"

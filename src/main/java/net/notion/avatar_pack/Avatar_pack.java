@@ -1,6 +1,7 @@
 package net.notion.avatar_pack;
 
 import net.fabricmc.api.ModInitializer;
+import net.notion.avatar_pack.entity.ModEntityTypes;
 import net.notion.avatar_pack.item.ModItems;
 
 import org.slf4j.Logger;
@@ -13,6 +14,6 @@ public class Avatar_pack implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
-
+		ModEntityTypes.registerEntityTypes();
 	}
 }

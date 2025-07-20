@@ -5,7 +5,7 @@
 	"mixins": [
 		"ExampleMixin"
 	],
-	"injectors": {
+	"injectors": {	
 		"defaultRequire": 1
 	},
 	"overwrites": {

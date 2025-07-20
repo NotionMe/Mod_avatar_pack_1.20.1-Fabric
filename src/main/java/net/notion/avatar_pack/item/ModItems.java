@@ -14,7 +14,13 @@ public class ModItems {
 
     // Реєстрація айтемів
     public static final Item STAFF_STORM = register("staff_storm_3d", 
-    StaffStormSettings::new, new Item.Settings());
+    StaffStormSettings::new, new Item.Settings().maxCount(1));
+
+    public static final Item STAFF_STORM_PLANER = register("staff_storm_3d_planer", 
+    StaffStormPlanerSettings::new, new Item.Settings().maxCount(1));
+
+    public static final Item BOOMERANG_SOKKA_ITEM = register("boomerang_sokka", 
+    BoomerangSokkaSettings::new, new Item.Settings().maxCount(1));
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         Identifier itemId = Identifier.of(Avatar_pack.MOD_ID, name);
@@ -28,6 +34,8 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
                 .register((entries) -> {
                     entries.add(ModItems.STAFF_STORM);
+                    entries.add(ModItems.STAFF_STORM_PLANER);
+                    entries.add(ModItems.BOOMERANG_SOKKA_ITEM);
                 });
     }
 }

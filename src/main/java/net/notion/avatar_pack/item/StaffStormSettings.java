@@ -49,8 +49,8 @@ public class StaffStormSettings extends Item {
             }
 
             // Wind sound
-            world.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.ITEM_ELYTRA_FLYING, SoundCategory.PLAYERS, 1.0F, 0.8F);
+            // world.playSound(null, player.getX(), player.getY(), player.getZ(),
+            //         SoundEvents.ITEM_ELYTRA_FLYING, SoundCategory.PLAYERS, 1.0F, 0.8F);
 
             // Magic sound
             world.playSound(null, player.getX(), player.getY(), player.getZ(),
